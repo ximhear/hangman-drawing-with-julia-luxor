@@ -2,7 +2,7 @@ using ThinkJulia
 using Luxor
 using Colors
 
-Drawing(1000, 1000, "hello.png")
+Drawing(1000, 1000, "hangman.png")
 origin()
 
 lineWidth = 20
@@ -33,6 +33,8 @@ line(pt3 - (0, lineWidth / 2), pt4 - (0, lineWidth / 2), :stroke)
 pt5 = between(bl, br, 0.65)
 pt6 = between(pt4, pt5, 0.15)
 line(pt4, pt6, :stroke)
+
+setlinecap("round")
 
 # head
 radius = distance(pt4, pt6) / 2
