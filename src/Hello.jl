@@ -5,7 +5,7 @@ using Colors
 Drawing(1000, 1000, "hangman.png")
 origin()
 
-lineWidth = 20
+lineWidth = 30
 halfWidth = lineWidth / 2
 setline(lineWidth)
 sethue(RGBA(0, 0, 0, 1))
