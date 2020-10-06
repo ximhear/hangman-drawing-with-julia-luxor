@@ -34,14 +34,17 @@ pt5 = between(bl, br, 0.65)
 pt6 = between(pt4, pt5, 0.15)
 line(pt4, pt6, :stroke)
 
+# head
 radius = distance(pt4, pt6) / 2
 pt7 = pt6 - (0, radius)
 circle(pt7, radius, :stroke)
 
+# body
 pt8 = pt7 - (0, radius)
 pt9 = pt8 - (0, 4radius)
 line(pt8, pt9, :stroke)
 
+# arms
 pt10 = pt8 - (0, radius * 0.75)
 pt11 = pt10 - (1.75radius, 1.75radius)
 line(pt10, pt11, :stroke)
@@ -49,6 +52,7 @@ line(pt10, pt11, :stroke)
 pt12 = pt10 + (1.75radius, -1.75radius)
 line(pt10, pt12, :stroke)
 
+# legs
 pt13 = pt9 - (1.75radius, 1.75radius)
 line(pt9, pt13, :stroke)
 
